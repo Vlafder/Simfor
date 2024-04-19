@@ -1,4 +1,4 @@
-View this file in RAW mode
+View this file in CODE mode
 
 To run site (on apache/linux(Arch)) localy:
 1) add 2 lines to /etc/hosts:
