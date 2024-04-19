@@ -122,6 +122,7 @@ To run site (on apache/linux(Arch)) localy:
             # Allow from all
         </Directory>
     </VirtualHost>
+10) run sudo a2ensite simfor, if everythig done correct then type simfor/ into the search bar and vuala
     
 
 
