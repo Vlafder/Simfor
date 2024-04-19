@@ -1,3 +1,5 @@
+View this file in RAW mode
+
 To run site (on apache/linux(Arch)) localy:
 1) add 2 lines to /etc/hosts:
    127.0.0.1 simfor
