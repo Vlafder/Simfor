@@ -1,0 +1,1390 @@
+2024-04-07 18:52:54 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /srv/http/advanced/yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /srv/http/advanced/yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1698
+    [2] => Access denied for user 'root'@'localhost'
+)
+
+2024-04-07 18:52:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/usr/bin/bash'
+    'WINDOWID' => '12582923'
+    'COLORTERM' => 'truecolor'
+    'CREDENTIALS_DIRECTORY' => '/run/credentials/getty@tty1.service'
+    'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA='
+    'KITTY_PID' => '1356'
+    'XDG_SEAT' => 'seat0'
+    'PWD' => '/srv/http/advanced'
+    'LOGNAME' => 'HotPot'
+    'XDG_SESSION_TYPE' => 'tty'
+    'SYSTEMD_EXEC_PID' => '456'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'KITTY_PUBLIC_KEY' => '1:yI9U#IZ1Bjt>UfgO&Vjh!C?#DX6Z&q0f7o(Ru<z<'
+    'WINDOWPATH' => '1'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/HotPot'
+    'LANG' => 'en_US.UTF-8'
+    'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/system.slice/system-getty.slice/getty@tty1.service/memory.pressure'
+    'KITTY_WINDOW_ID' => '1'
+    'INVOCATION_ID' => 'e49d89284fa64d029737bff8945f5a9f'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERMINFO' => '/usr/lib/kitty/terminfo'
+    'TERM' => 'xterm-kitty'
+    'USER' => 'HotPot'
+    'DISPLAY' => ':0'
+    'SHLVL' => '3'
+    'XDG_VTNR' => '1'
+    'XDG_SESSION_ID' => '1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DEBUGINFOD_URLS' => 'https://debuginfod.archlinux.org '
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/spool/mail/HotPot'
+    'KITTY_INSTALLATION_DIR' => '/usr/lib/kitty'
+    '_' => './yii'
+    'OLDPWD' => '/srv/http'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712515974.3731
+    'REQUEST_TIME' => 1712515974
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-07 18:53:18 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /srv/http/advanced/yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /srv/http/advanced/yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2024-04-07 18:53:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/create articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712515998.0758
+    'REQUEST_TIME' => 1712515998
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-07 18:53:34 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /srv/http/advanced/yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /srv/http/advanced/yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2024-04-07 18:53:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/create articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712516014.5154
+    'REQUEST_TIME' => 1712516014
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-07 21:44:11 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: name in /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php:244
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\console\Controller->bindActionParams()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#7 /srv/http/advanced/yii(23): yii\base\Application->run()
+#8 {main}
+2024-04-07 21:44:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/create'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712526251.7156
+    'REQUEST_TIME' => 1712526251
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]2024-04-07 21:44:25 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /srv/http/advanced/yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /srv/http/advanced/yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2024-04-07 21:44:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/create articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712526265.3433
+    'REQUEST_TIME' => 1712526265
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-07 21:55:15 [-][-][-][error][ParseError] ParseError: Unclosed '(' on line 18 does not match '}' in /srv/http/advanced/console/migrations/m240407_214554_articles.php:29
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(197): yii\console\controllers\BaseMigrateController->includeMigrationFile()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#11 /srv/http/advanced/yii(23): yii\base\Application->run()
+#12 {main}
+2024-04-07 21:55:01 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712526901.8299
+    'REQUEST_TIME' => 1712526901
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-07 21:55:47 [-][-][-][error][ParseError] ParseError: syntax error, unexpected token "}" in /srv/http/advanced/console/migrations/m240407_214554_articles.php:28
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(197): yii\console\controllers\BaseMigrateController->includeMigrationFile()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#11 /srv/http/advanced/yii(23): yii\base\Application->run()
+#12 {main}
+2024-04-07 21:55:45 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1712526945.7257
+    'REQUEST_TIME' => 1712526945
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-16 17:34:12 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: migrate/delete in /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#5 /srv/http/advanced/yii(23): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate/delete". in /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#2 /srv/http/advanced/yii(23): yii\base\Application->run()
+#3 {main}
+2024-04-16 17:34:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/delete articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713288852.2638
+    'REQUEST_TIME' => 1713288852
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/delete'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-16 17:34:24 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: migrate/remove in /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#5 /srv/http/advanced/yii(23): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrate/remove". in /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#2 /srv/http/advanced/yii(23): yii\base\Application->run()
+#3 {main}
+2024-04-16 17:34:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/remove articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713288864.8204
+    'REQUEST_TIME' => 1713288864
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/remove'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-16 18:14:25 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "create/migration". in /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#3 /srv/http/advanced/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "create/migration". in /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#2 /srv/http/advanced/yii(23): yii\base\Application->run()
+#3 {main}
+2024-04-16 18:14:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii create/migration articles'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713291265.4556
+    'REQUEST_TIME' => 1713291265
+    'argv' => [
+        0 => './yii'
+        1 => 'create/migration'
+        2 => 'articles'
+    ]
+    'argc' => 3
+]2024-04-16 18:16:11 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "m240416_181555_articles" does not exist in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /srv/http/advanced/yii(23): yii\base\Application->run()
+#16 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "m240416_181555_articles". in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+2024-04-16 18:16:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713291369.6066
+    'REQUEST_TIME' => 1713291369
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-16 18:16:29 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "m240416_181555_articles" does not exist in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /srv/http/advanced/yii(23): yii\base\Application->run()
+#16 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "m240416_181555_articles". in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+2024-04-16 18:16:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713291387.102
+    'REQUEST_TIME' => 1713291387
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-16 18:32:53 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'comments' already exists in /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php:1320
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1320): PDOStatement->execute()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240416_183231_comments.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240416_183231_comments->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'comments' already exists
+The SQL being executed was: CREATE TABLE `comments` (
+	`art_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(255),
+	`user_id` int(11),
+	`date` date
+) in /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1325): yii\db\Schema->convertException()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240416_183231_comments.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240416_183231_comments->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'comments' already exists
+)
+
+2024-04-16 18:32:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713292371.89
+    'REQUEST_TIME' => 1713292371
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-18 13:30:24 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: m240418_132806_likes::bool() in /srv/http/advanced/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /srv/http/advanced/console/migrations/m240418_132806_likes.php(16): yii\base\Component->__call()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240418_132806_likes->up()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#11 /srv/http/advanced/yii(23): yii\base\Application->run()
+#12 {main}
+2024-04-18 13:30:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713447023.1091
+    'REQUEST_TIME' => 1713447023
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-18 22:25:41 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'likes' already exists in /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php:1320
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1320): PDOStatement->execute()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240418_222410_privileg.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240418_222410_privileg->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'likes' already exists
+The SQL being executed was: CREATE TABLE `likes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`admin` tinyint(1),
+	`comment` tinyint(1)
+) in /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1325): yii\db\Schema->convertException()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240418_222410_privileg.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240418_222410_privileg->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'likes' already exists
+)
+
+2024-04-18 22:25:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713479140.4659
+    'REQUEST_TIME' => 1713479140
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-19 00:28:42 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /srv/http/advanced/yii(23): yii\base\Application->run()
+#9 {main}
+2024-04-19 00:28:42 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/down init'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713486522.434
+    'REQUEST_TIME' => 1713486522
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+        2 => 'init'
+    ]
+    'argc' => 3
+]2024-04-19 00:28:48 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /srv/http/advanced/yii(23): yii\base\Application->run()
+#9 {main}
+2024-04-19 00:28:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/down init 1'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713486528.7297
+    'REQUEST_TIME' => 1713486528
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+        2 => 'init'
+        3 => '1'
+    ]
+    'argc' => 4
+]2024-04-19 00:29:12 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "m240418_222410_privileg" does not exist in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(785): yii\console\controllers\MigrateController->createMigration()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(280): yii\console\controllers\BaseMigrateController->migrateDown()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /srv/http/advanced/yii(23): yii\base\Application->run()
+#16 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "m240418_222410_privileg". in /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(199): yii\BaseYii::createObject()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(785): yii\console\controllers\MigrateController->createMigration()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(280): yii\console\controllers\BaseMigrateController->migrateDown()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+2024-04-19 00:28:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate/down 1 init'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713486536.8765
+    'REQUEST_TIME' => 1713486536
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+        2 => '1'
+        3 => 'init'
+    ]
+    'argc' => 4
+]2024-04-19 00:31:40 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: m240419_003106_init::boolen() in /srv/http/advanced/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /srv/http/advanced/console/migrations/m240419_003106_init.php(29): yii\base\Component->__call()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240419_003106_init->up()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#6 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#11 /srv/http/advanced/yii(23): yii\base\Application->run()
+#12 {main}
+2024-04-19 00:31:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713486695.1897
+    'REQUEST_TIME' => 1713486695
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]2024-04-19 02:18:19 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'likes' already exists in /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php:1320
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1320): PDOStatement->execute()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240419_021731_asd.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240419_021731_asd->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'likes' already exists
+The SQL being executed was: CREATE TABLE `likes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`art_id` int(11),
+	`user_id` int(11),
+	`state` tinyint(1)
+) in /srv/http/advanced/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1325): yii\db\Schema->convertException()
+#1 /srv/http/advanced/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /srv/http/advanced/vendor/yiisoft/yii2/db/Migration.php(334): yii\db\Command->execute()
+#3 /srv/http/advanced/console/migrations/m240419_021731_asd.php(12): yii\db\Migration->createTable()
+#4 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(758): m240419_021731_asd->up()
+#5 /srv/http/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /srv/http/advanced/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /srv/http/advanced/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /srv/http/advanced/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /srv/http/advanced/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /srv/http/advanced/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /srv/http/advanced/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /srv/http/advanced/yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'likes' already exists
+)
+
+2024-04-19 02:18:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'COLORTERM' => 'truecolor'
+    'XAUTHORITY' => '/home/HotPot/.Xauthority'
+    'LANG' => 'en_US.UTF-8'
+    'TERM' => 'xterm-kitty'
+    'DISPLAY' => ':0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'HOME' => '/root'
+    'SHELL' => '/usr/bin/bash'
+    'SUDO_COMMAND' => './yii migrate'
+    'SUDO_USER' => 'HotPot'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1713493095.597
+    'REQUEST_TIME' => 1713493095
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

@@ -1,0 +1,49 @@
+From: SimFor robot <support@example.com>
+To: example@test.com
+Subject: Account registration at SimFor
+MIME-Version: 1.0
+Date: Tue, 16 Apr 2024 19:10:17 +0000
+Message-ID: <928065d94b2b8cd5cb5913fa23847f0d@example.com>
+Content-Type: multipart/alternative; boundary=y-3KYI-A
+
+--y-3KYI-A
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello HotPot,
+
+Follow the link below to verify your email:
+
+http://=
+simfor/site/verify-email?token=3DoTZtKZ_H3nIXxMfS1Qrf7ABeSfKO7emH_171329461=
+7
+--y-3KYI-A
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello HotPot,</p>
+
+    <p>Fol=
+low the link below to verify your email:</p>
+
+    <p><a href=3D"http://=
+simfor/site/verify-email?token=3DoTZtKZ_H3nIXxMfS1Qrf7ABeSfKO7emH_171329461=
+7">http://simfor/site/verify-email?token=3DoTZtKZ_H3nIXxMfS1Qrf7ABeSfKO7emH=
+_1713294617</a></p>
+</div>
+    </body>
+</html>
+
+--y-3KYI-A--
