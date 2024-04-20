@@ -1,0 +1,54 @@
+.elements {
+    background: transparent; 
+    shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 7px;
+}
+
+.elements svg:hover {
+    cursor: pointer;
+} 
+
+.text_blur {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-image: linear-gradient(
+            rgba(0, 255, 0, 0),
+            rgba(255, 255, 255, 1)
+        );
+    height: 50%;
+    width: 100%;
+}
+
+
+
+.comment > p {
+    margin-left: 30px;
+}
+
+.comment > *{
+    padding-left: 10px;
+}
+
+.page_nav_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0),
+            rgba(255, 255, 255, 1), 50%,
+            rgba(255, 255, 255, 1)
+        );
+    display: flex;
+    justify-content: center;
+}
+
+.page_nav_buttons{
+    margin-top: 2%;
+    width: 10%;
+}

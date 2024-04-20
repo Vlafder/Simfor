@@ -1,0 +1,30 @@
+.art_btn {
+	width: 100%;
+	margin-top: 15px;
+	padding: 0px;
+	border: solid 1px white;
+	background-color: white;
+	color: #6e6e6e;
+}
+
+.art_btn:hover {
+	color: black;
+}
+
+.block_item{
+	display: inline-block;
+	border: none;
+	text-align: left;
+}
+
+.block_name {
+	color: #6e6e6e;
+	font-size: medium;
+	width: 7%;
+	vertical-align:top;
+}
+
+.block_info {
+	color: black;
+	font-size: large;
+}
